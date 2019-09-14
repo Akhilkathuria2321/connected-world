@@ -10,7 +10,8 @@ import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
 import { CarSimulatorComponent } from './car-simulator/car-simulator.component';
 import { TestComponent } from './test/test.component';
-import { AgmDirectionModule } from 'agm-direction';   // agm-direction
+import { AgmDirectionModule } from 'agm-direction';
+import { DirectionWidgetComponent } from './direction-widget/direction-widget.component';   // agm-direction
 
 @NgModule({
   declarations: [
@@ -19,14 +20,15 @@ import { AgmDirectionModule } from 'agm-direction';   // agm-direction
     SidenavComponent,
     MapComponent,
     CarSimulatorComponent,
-    TestComponent
+    TestComponent,
+    DirectionWidgetComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     IconsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBiORUB4P28AAOMzoTcflhqWzUSmIMbkU8'
+      apiKey: ''
     }),
     AgmDirectionModule
   ],
