@@ -1,0 +1,4 @@
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="15" (mapClick)="onChosenLocation($event)">
+    <agm-marker *ngIf="isChosen" [latitude]="lat" [longitude]="lng" [iconUrl]="'../../assets/car_icon.png'"></agm-marker>
+    <agm-direction [origin]="origin" [destination]="destination"></agm-direction>
+</agm-map>
